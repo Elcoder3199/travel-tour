@@ -1,0 +1,75 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: $box-shadow;
+
+    .logo {
+        font-size: 2.5rem;
+        color: $black;
+    }
+
+    .navbar {
+        transition: $main_transition;
+
+        @media (max-width: 768px) {
+            background-color: $white;
+            padding: 2rem;
+            position: absolute;
+            top: 99%;
+            left: 0;
+            right: 0;
+            border-top: $border;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+
+        a {
+            font-size: 1.6rem;
+            margin-left: 2rem;
+            color: $black;
+
+            @media (max-width: 768px) {
+                display: block;
+                margin: 2rem;
+                text-align: center;
+            }
+
+            &:hover {
+                color: $main_color;
+            }
+
+            &.active {
+                color: $main_color !important;
+            }
+        }
+
+        &.active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+        }
+    }
+
+    #menu_btn {
+        font-size: 2.5rem;
+        color: $black;
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block;
+            transition: $main_transition;
+        }
+    }
+}
+
+#menu_btn.fa-times {
+    transform: rotate(180deg);
+}

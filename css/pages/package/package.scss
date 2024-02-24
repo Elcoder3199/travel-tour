@@ -1,0 +1,75 @@
+// ########### packages design start ########
+@use "../../sass/helpers/varibales" as *;
+%source-inline-block {
+  display: inline-block;
+}
+.packages {
+  background-color: $light_bg;
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 3rem;
+    .box {
+      border: $border;
+      box-shadow: $box-shadow;
+      background-color: $white;
+      display: none;
+      &:nth-child(1) {
+        @extend %source-inline-block;
+      }
+      &:nth-child(2) {
+        @extend %source-inline-block;
+      }
+      &:nth-child(3) {
+        @extend %source-inline-block;
+      }
+      &:nth-child(4) {
+        @extend %source-inline-block;
+      }
+      &:nth-child(5) {
+        @extend %source-inline-block;
+      }
+      &:nth-child(6) {
+        @extend %source-inline-block;
+      }
+    }
+    .image {
+      height: 22rem;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.06);
+        }
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        transition: 0.2s linear;
+      }
+    }
+    .content {
+      padding: 2rem;
+      text-align: center;
+      h3 {
+        font-size: 2.4rem;
+        color: $black;
+        margin: 0.4rem 0;
+      }
+      p {
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        color: $light_black;
+        line-height: 2;
+      }
+    }
+  }
+  .load-more {
+    text-align: center !important;
+    margin: 2rem auto;
+    width: fit-content;
+    display: block;
+  }
+}
+// ########### packages design end ########

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/sass/mainFile/main.css">
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="css/sass/mainFile/all.min.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- home page css file -->
+    <link rel="stylesheet" href="css/pages/book/book.css">
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+</head>
+<div class="loading">
+    <span></span>
+</div>
+<section class="header">
+    <a href="index.html" class="logo">travel</a>
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="package.html">package</a>
+      <a href="book.html" class="active">book</a>
+    </nav>
+    <div id="menu_btn" class="fa fa-bars"></div>
+  </section>
+
+
+<div class="heading">
+    <h1>book now</h1>
+</div>
+
+<section class="booking">
+    <h3 class="heading-title">book your trip</h3>
+    <form action="php/book_form.php" method="post" class="book-form">
+        <div class="flex">
+            <div class="inputBox">
+                <span>name</span>
+                <input type="text" placeholder="inter your name" name="name" required>
+            </div>
+            <div class="inputBox">
+                <span>email</span>
+                <input type="email" placeholder="inter your email" name="email" required>
+            </div>
+            <div class="inputBox">
+                <span>phone</span>
+                <input type="number" placeholder="inter your phone" name="phone" min="10" required>
+            </div>
+            <div class="inputBox">
+                <span>address</span>
+                <input type="text" placeholder="inter your address" name="address" required>
+            </div>
+            <div class="inputBox">
+                <span>how many</span>
+                <input type="number" placeholder="number of guests" name="guests" required>
+            </div>
+            <div class="inputBox">
+                <span>arrivals</span>
+                <input type="date" name="arrivals" required>
+            </div>
+            <div class="inputBox">
+                <span>leaving</span>
+                <input type="date" name="leaving" required>
+            </div>
+        </div>
+        <input type="submit" value="send" class="btn" name="send">
+    </form>
+</section>
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
+            <a href="about.html"><i class="fas fa-angle-right"></i> about</a>
+            <a href="package.html"><i class="fas fa-angle-right"></i> package</a>
+            <a href="book.html"><i class="fas fa-angle-right"></i> book</a>
+        </div>
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-angle-right"></i> ask question</a>
+            <a href="#"><i class="fas fa-angle-right"></i> about us</a>
+            <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+            <a href="#"><i class="fas fa-angle-right"></i> terms of us</a>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel: +249 903366770"><i class="fas fa-phone"></i> +249 903366770</a>
+            <a href="tel: +249 711660114"><i class="fas fa-phone"></i> +249 711660114</a>
+            <a href="mailto:linkden319@gmail.com"><i class="fas fa-envelope"></i> linkden319@gmail.com</a>
+            <a href="#"><i class="fas fa-map"></i> sudan, kassala, streev number 23</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i> linkeden</a>
+            <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+        </div>
+    </div>
+    <div class="created">created by <span>ahmed abdelrahman</span> | alright reverse 2024</div>
+</section>
+<!-- swipper js link -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- custome js file -->
+<script src="js/script.js"></script>
+</body>
+
+</html>

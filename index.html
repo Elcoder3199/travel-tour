@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/sass/mainFile/main.css">
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="css/sass/mainFile/all.min.css">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- home page css file -->
+    <link rel="stylesheet" href="css/pages/home/home.css">
+    <!-- normalize css file -->
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+</head>
+
+<body>
+    <!-- When Page Loaded this will removing ( div.class = loading ) -->
+    <div class="loading">
+        <span></span>
+    </div>
+
+    <!-- header -->
+    <section class="header">
+        <a href="index.html" class="logo">travel</a>
+        <nav class="navbar">
+          <a href="index.html" class="active">home</a>
+          <a href="about.html">about</a>
+          <a href="package.html">package</a>
+          <a href="book.html">book</a>
+        </nav>
+        <div id="menu_btn" class="fa fa-bars"></div>
+      </section>
+    
+
+    <!-- home -->
+    <section class="home">
+        <div class="home-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="slide swiper-slide" style="background-image: url('images/slider/1.jpg');">
+                    <div class="content">
+                        <span>explore, travel, discover</span>
+                        <h3>travel around the world</h3>
+                        <a href="package.html" class="btn">discover more</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide" style="background-image: url('images/slider/2.jpg');">
+                    <div class="content">
+                        <span>explore, travel, discover</span>
+                        <h3>discover new place</h3>
+                        <a href="package.html" class="btn">discover more</a>
+                    </div>
+                </div>
+                <div class="slide swiper-slide" style="background-image: url('images/slider/3.webp');">
+                    <div class="content">
+                        <span>explore, travel, discover</span>
+                        <h3>make your tour worwhite</h3>
+                        <a href="package.html" class="btn">discover more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="services">
+        <h1 class="heading-title">our services</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/services/1.svg" alt="">
+                <h2>adventure</h2>
+            </div>
+            <div class="box">
+                <img src="images/services/2.svg" alt="">
+                <h2>treacking</h2>
+            </div>
+            <div class="box">
+                <img src="images/services/3.svg" alt="">
+                <h2>camp fire</h2>
+            </div>
+            <div class="box">
+                <img src="images/services/4.svg" alt="">
+                <h2>off rode</h2>
+            </div>
+            <div class="box">
+                <img src="images/services/5.svg" alt="">
+                <h2>tour guide</h2>
+            </div>
+            <div class="box">
+                <img src="images/services/6.svg" alt="">
+                <h2>camping</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="home-about">
+        <div class="image">
+            <img src="images/home-about-us/about.webp" alt="">
+        </div>
+        <div class="content">
+            <h3>about us</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur similique voluptatum temporibus
+                sunt blanditiis nisi. Quidem excepturi qui perferendis obcaecati explicabo molestias non fuga quia animi
+                voluptate, nisi nulla blanditiis?
+            </p>
+            <a href="about.html" class="btn">read more</a>
+        </div>
+    </section>
+
+    <section class="home-packages">
+        <h1 class="heading-title"> our packages</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/packages/1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>adventure & tour</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque</p>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/packages/2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>adventure & tour</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque</p>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/packages/3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>adventure & tour</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque</p>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+        <a href="package.html" class="btn load-more">load more</a>
+    </section>
+
+    <section class="home-offers">
+        <div class="content">
+            <h3>upto 50% off</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae fugit aperiam placeat, cupiditate
+                architecto nihil pariatur sapiente ipsam porro reiciendis?</p>
+            <a href="book.html" class="btn">book now</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i> about</a>
+                <a href="package.html"><i class="fas fa-angle-right"></i> package</a>
+                <a href="book.html"><i class="fas fa-angle-right"></i> book</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> ask question</a>
+                <a href="#"><i class="fas fa-angle-right"></i> about us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> privacy policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i> terms of us</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel: +249 903366770"><i class="fas fa-phone"></i> +249 903366770</a>
+                <a href="tel: +249 711660114"><i class="fas fa-phone"></i> +249 711660114</a>
+                <a href="mailto:linkden319@gmail.com"><i class="fas fa-envelope"></i> linkden319@gmail.com</a>
+                <a href="#"><i class="fas fa-map"></i> sudan, kassala, streev number 23</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i> facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> linkeden</a>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+            </div>
+        </div>
+        <div class="created">created by <span>ahmed abdelrahman</span> | alright reverse 2024</div>
+    </section>
+
+    <!-- swipper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custome js file -->
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

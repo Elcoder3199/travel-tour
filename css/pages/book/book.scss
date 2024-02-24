@@ -1,0 +1,39 @@
+@use "../../sass/helpers/varibales" as *;
+.booking {
+    .book-form {
+        padding: 2rem;
+        background-color: $light_bg;
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            .inputBox {
+                flex: 1 1 41rem;
+                input {
+                    padding: 1.2rem 1.4rem;
+                    width: 100%;
+                    color: $light_black;
+                    font-size: 1.4rem;
+                    text-transform: none;
+                    margin-top: 1.4rem;
+                    border: $border;
+                    transition: 0.2s linear;
+                    &:focus {
+                        background-color: $black;
+                        color: $white;
+                        &::placeholder {
+                            color: $light_white;
+                        }
+                    }
+                }
+                span {
+                    color: $light_black;
+                    font-size: 1.5rem;
+                }
+                .btn {
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

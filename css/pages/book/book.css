@@ -1,0 +1,39 @@
+.booking .book-form {
+  padding: 2rem;
+  background-color: hsl(0, 0%, 93%);
+}
+.booking .book-form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.booking .book-form .flex .inputBox {
+  flex: 1 1 41rem;
+}
+.booking .book-form .flex .inputBox input {
+  padding: 1.2rem 1.4rem;
+  width: 100%;
+  color: #777;
+  font-size: 1.4rem;
+  text-transform: none;
+  margin-top: 1.4rem;
+  border: 0.1rem solid hwb(0 13% 87%);
+  transition: 0.2s linear;
+}
+.booking .book-form .flex .inputBox input:focus {
+  background-color: hwb(0 13% 87%);
+  color: hsl(0, 0%, 100%);
+}
+.booking .book-form .flex .inputBox input:focus::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.booking .book-form .flex .inputBox input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.booking .book-form .flex .inputBox span {
+  color: #777;
+  font-size: 1.5rem;
+}
+.booking .book-form .flex .inputBox .btn {
+  margin-top: 2rem;
+}/*# sourceMappingURL=book.css.map */

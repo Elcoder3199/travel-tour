@@ -1,0 +1,89 @@
+@use "../../sass/helpers/varibales" as *;
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  .image {
+    flex: 1 1 41rem;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    text-align: center;
+    flex: 1 1 41rem;
+    h3 {
+      font-size: 3rem;
+      color: $black;
+    }
+    p {
+      font-size: 1.4rem;
+      color: $light_black;
+      line-height: 1.6;
+      padding: 1rem 0;
+    }
+  }
+  .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    align-items: flex-end;
+    margin-top: 2rem;
+    .icons {
+      background-color: $light_bg;
+      padding: 2rem;
+      flex: 1 1 16rem;
+      i {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+        color: $main_color;
+      }
+      span {
+        font-size: 1.4rem;
+        color: $light_black;
+        display: block;
+      }
+    }
+  }
+}
+
+.reviews {
+  background-color: $light_bg;
+  .slide {
+    background-color: $white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: $box-shadow;
+    border: $border;
+    user-select: none;
+    .stars {
+      padding-bottom: 0.5rem;
+      i {
+        font-size: 1.7rem;
+        color: $main_color;
+      }
+    }
+    p {
+      color: $light_black;
+      font-size: 1.4rem;
+      line-height: 2;
+      padding: 1rem 0;
+    }
+    h3 {
+      font-size: 2rem;
+      color: $black;
+    }
+    span {
+      font-size: 1.4rem;
+      color: $main_color;
+      display: block;
+    }
+    img {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+  }
+}

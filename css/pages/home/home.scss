@@ -1,0 +1,184 @@
+@use "../../sass/helpers/varibales" as *;
+@use "../../sass/helpers/mixin" as *;
+// home design start
+.home {
+  padding: 0;
+
+  .slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    min-height: 60rem;
+
+    .content {
+      width: 85rem;
+      display: none;
+
+      span {
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 2.2rem;
+        color: $light_white;
+        animation: 0.2s linear fadein backwards 0.2s;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        text-shadow: $text_shadow;
+        color: $white;
+        font-size: 6vw;
+        line-height: 1.1;
+        animation: 0.2s linear fadein backwards 0.4s;
+      }
+
+      .btn {
+        animation: 0.2s linear fadein backwards 0.6s;
+      }
+    }
+  }
+}
+// home design end
+
+.home .swiper-slide-active .content {
+  display: inline-block;
+}
+
+// ######### home services design start #######
+.services {
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 1.5rem;
+
+    .box {
+      padding: 3rem 2rem;
+      text-align: center;
+      transition: $main_transition;
+      background-color: $main_color;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $black;
+      }
+
+      img {
+        height: 7rem;
+      }
+
+      h2 {
+        color: $white;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+// ######### home services design end #########
+
+// ########### home about design start ########
+.home-about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .image {
+    flex: 1 1 41rem;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    flex: 1 1 41rem;
+    padding: 3rem;
+    background-color: $light_bg;
+    h3 {
+      font-size: 3rem;
+      color: $black;
+    }
+    p {
+      font-size: 1.2rem;
+      color: $black;
+      line-height: 2;
+      padding: 2rem 0;
+    }
+  }
+}
+// ########## home about design end ##########
+
+// ########### home packages design start ########
+.home-packages {
+  background-color: $light_bg;
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 3rem;
+    .box {
+      border: $border;
+      box-shadow: $box-shadow;
+      background-color: $white;
+    }
+    .image {
+      height: 25rem;
+      overflow: hidden;
+      img {
+        height: 90%;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        transition: 0.2s linear;
+      }
+    }
+    .content {
+      padding: 2rem;
+      text-align: center;
+      h2 {
+        font-size: 2.4rem;
+        color: $black;
+        margin: 0.4rem 0;
+      }
+      p {
+        padding: 1rem 0;
+        font-size: 1.3rem;
+        color: $light_black;
+        line-height: 2;
+      }
+    }
+  }
+  .load-more {
+    text-align: center !important;
+    margin: 2rem auto;
+    display: block;
+    width: fit-content;
+  }
+}
+// ########### home packages design end ########
+
+.home-offers {
+  text-align: center;
+  .content {
+    max-width: 50rem;
+    margin: 0 auto;
+    h3 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: $black;
+    }
+    p {
+      font-size: 1.3rem;
+      color: $light_black;
+      line-height: 2;
+      padding: 1rem 0;
+    }
+  }
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
